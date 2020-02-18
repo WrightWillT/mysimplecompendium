@@ -1,0 +1,21 @@
+Package: mysimplecompendium
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: person("Will", "Wright", 
+                  email= "wtwright@uw.edu", 
+                  role = c("aut", "cre"), 
+                  comment = c(ORCID = "0000-0003-1264-4105"))
+Maintainer: The package maintainer <wtwright@uw.edu>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>=3.6.0)
+Imports: 
+    dplyr (>= 0.8.4)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

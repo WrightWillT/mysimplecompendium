@@ -1,0 +1,30 @@
+---
+title: "my-vignette"
+output:
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    number_sections: false
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysimplecompendium)
+library(ggplot2) 
+```
+
+```{r figure-with-caption, fig.cap = "a plot"}
+data <- rnorm(100)
+g <- ggplot(data)
+g + geom_point()
+```
+
